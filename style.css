@@ -1,0 +1,160 @@
+:root { /*Definindo cores de todo o projeto*/
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: "Inter";
+    --botao-azul-efeito: #3c92fa;
+}
+
+body { /*Definindo cores das classes no body*/
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* { /*Selecionando todo o CSS*/
+    margin: 0; /*Remove margens*/
+    padding: 0; /*Remove padding*/
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat; /*Comando para não repetir imagem. Remove a imagem repetida embaixo*/
+    background-size: contain; /*Preenche todo o container com a imagem aumentando-a*/
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid; /*Separa os elementos na tela, seja um ao lado do outro ou um embaixo do outro*/
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao { /*Estilização do botão*/
+    background-color: var(--botao-azul); /*Cor do preenchimento do botão*/
+    border-radius: 5px; /*Define a borda arredondada*/
+    padding: 1em; /*Insere um padding no botão*/
+    color: var(--branco-principal); /*cor da fonte do botão*/
+    display:block; /*define o display para ocupar o bloco inteiro, que antes estava "in line" ou seja, em linha*/
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.descricao__container_secundario2 {
+    color: var(--cinza-secundario);
+    margin-right: 4em;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+} 
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;  
+    list-style-type: none;  
+    margin-top: 1em;    
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;    
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.lista__link a:hover { /*Ao passar o mouse em cima dos links, muda a cor*/
+   color: var(--botao-azul);
+}
+
+.lista__link a:active { /*Muda a cor do link ao clicar*/
+    color:purple
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color:var(--cor-de-fundo);
+}
